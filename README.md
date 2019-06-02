@@ -1,6 +1,6 @@
 I want to make a neural network from scratch, in order to abstract away the technicalities of it's inner workings in the future. This will hopefully allow more complex networks to be made, whilst still having a good understanding of the mathematics of how the network is functioning underneath. 
 
-1. Making the Neural Network 
+1. Making the Neural Network, **The \__init__ method** 
 
 Neural Networks are a combination of the following elements
 * An **input layer**, **x**
@@ -9,7 +9,7 @@ Neural Networks are a combination of the following elements
 * Weights and biases within each layer, **W and b**
 * A choice of **activation function** for each hidden layer, **σ**
 
-2. Training the Neural Network
+2. Training the Neural Network, **The __feedforward__ method, and the __backpropagation__ method**
 
 The output of a 2-layer neural network is:
 * **ŷ=σ(W<sub>2</sub>σ(W<sub>1</sub>x + b<sub>1</sub>) + b<sub>2</sub>)**
