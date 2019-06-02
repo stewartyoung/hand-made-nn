@@ -9,7 +9,7 @@ Neural Networks are a combination of the following elements
 * Weights and biases within each layer, **W and b**
 * A choice of **activation function** for each hidden layer, **σ**
 
-2. Training the Neural Network, **The __feedforward__ method, and the __backpropagation__ method**
+2. Training the Neural Network, **The ***feedforward*** method, and the ***backpropagation*** method**
 
 The output of a 2-layer neural network is:
 * **ŷ=σ(W<sub>2</sub>σ(W<sub>1</sub>x + b<sub>1</sub>) + b<sub>2</sub>)**
