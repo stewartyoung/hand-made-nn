@@ -10,3 +10,9 @@ class NeuralNetwork:
 		self.y = y
 		# Make an array, of the same size as the labels y array, of zeros, and assign it to an instance of the ouput object
 		self.output = np.zeros(y.shape)
+	
+	def feedforward(self):
+		# layer 1 is as follows - z=sigma(w1*x + b1)
+		self.layer1 = sigmoid(np.dot(self.input, self.weights1))
+		# output is = sigmoid(w2*z +b2)
+		self.output = sigmoid(np.dot(self.layer1, self.weights2))
