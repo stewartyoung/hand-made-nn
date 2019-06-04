@@ -25,4 +25,4 @@ The training process consist of the following steps:
 There are many possible loss functions, but an intuitive version used in this code is the sum of squares loss function:
 
 **= Σ(y - ŷ)<sup>2</sup>**
-https://user-images.githubusercontent.com/36263575/58904839-3de9e800-8700-11e9-883c-ac3740d77c84.png
+![alt text](https://user-images.githubusercontent.com/36263575/58904839-3de9e800-8700-11e9-883c-ac3740d77c84.png)
