@@ -16,3 +16,12 @@ class NeuralNetwork:
 		self.layer1 = sigmoid(np.dot(self.input, self.weights1))
 		# output is = sigmoid(w2*z +b2)
 		self.output = sigmoid(np.dot(self.layer1, self.weights2))
+	def backprop(self):
+		# apply chain rule to weights1 or w1
+		d_weights1 = np.dot(self.input.T,  (np.dot(2*(self.y - self.output) * sigmoid_derivative(self.output), self.weights2.T) * sigmoid_derivative(self.layer1)))
+		# apply chain rule to weights2 or w2
+		d_weights2 = np.dot(self.layer1.T, (2*(self.y - self.output) * sigmoid_derivative(self.output)))
+
+		# we now need to update weights with the derivative (change) of the loss function
+		self.weights1 += d_weights1
+        self.weights2 += d_weights2
