@@ -1,3 +1,11 @@
+import numpy as np
+
+def sigmoid(x):
+    return 1.0/(1+ np.exp(-x))
+
+def sigmoid_derivative(x):
+    return x * (1.0 - x)
+
 class NeuralNetwork:
 	def __init__(self, x, y):
 		# Take the data x, and assign it to an instance of the input object
@@ -24,4 +32,19 @@ class NeuralNetwork:
 
 		# we now need to update weights with the derivative (change) of the loss function
 		self.weights1 += d_weights1
-        self.weights2 += d_weights2
+		self.weights2 += d_weights2
+
+# run the algorithm
+if __name__ == "__main__":
+    X = np.array([[0,0,1],
+                  [0,1,1],
+                  [1,0,1],
+                  [1,1,1]])
+    y = np.array([[0],[1],[1],[0]])
+    nn = NeuralNetwork(X,y)
+
+    for i in range(1500):
+        nn.feedforward()
+        nn.backprop()
+
+    print(nn.output)
