@@ -39,3 +39,5 @@ Say we have the following relationship between our data and our labels.
 | 1  | 1  | 1  | 0 |
 
 We want to train the algorithm to apprximate the function f(x) that provides the map of x to y, by updated the weights of the neural network.
+
+![alt text](https://user-images.githubusercontent.com/36263575/58977577-f1ff7780-87c1-11e9-9d9a-08883dc1e0b2.png)
