@@ -26,3 +26,5 @@ There are many possible loss functions, but an intuitive version used in this co
 **= Σ(y - ŷ)<sup>2</sup>**
 
 ![alt text](https://user-images.githubusercontent.com/36263575/58904839-3de9e800-8700-11e9-883c-ac3740d77c84.png)
+
+## 4. Running backpropagation and feedforwards algorithms to find appropriate weights
