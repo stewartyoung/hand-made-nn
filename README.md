@@ -40,4 +40,6 @@ Say we have the following relationship between our data and our labels.
 
 We want to train the algorithm to apprximate the function f(x) that provides the map of x to y, by updated the weights of the neural network.
 
+After updating the algorithm weights 1500 times we get the following predictions for y, ŷ. As you can see they're not far off!
+
 ![alt text](https://user-images.githubusercontent.com/36263575/58977577-f1ff7780-87c1-11e9-9d9a-08883dc1e0b2.png)
