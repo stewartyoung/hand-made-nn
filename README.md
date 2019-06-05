@@ -28,3 +28,14 @@ There are many possible loss functions, but an intuitive version used in this co
 ![alt text](https://user-images.githubusercontent.com/36263575/58904839-3de9e800-8700-11e9-883c-ac3740d77c84.png)
 
 ## 4. Running backpropagation and feedforwards algorithms to find appropriate weights
+
+Say we have the following relationship between our data and our labels.
+
+| x1 | x2 | x3 | y |
+|----|----|----|---|
+| 0  | 0  | 1  | 0 |
+| 0  | 1  | 1  | 1 |
+| 1  | 0  | 1  | 1 |
+| 1  | 1  | 1  | 0 |
+
+We want to train the algorithm to apprximate the function f(x) that provides the map of x to y, by updated the weights of the neural network.
